@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_line_graph_balance.png",
+        "source": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\src\\main\\res\\drawable-mdpi\\ic_line_graph_balance.png"
+    },
+    {
+        "merged": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_pie_chart.png",
+        "source": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\src\\main\\res\\drawable-mdpi\\ic_pie_chart.png"
+    },
+    {
+        "merged": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_linne_graph_principal.png",
+        "source": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\src\\main\\res\\drawable-mdpi\\ic_linne_graph_principal.png"
+    },
+    {
+        "merged": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_result.png",
+        "source": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\src\\main\\res\\drawable-mdpi\\ic_result.png"
+    },
+    {
+        "merged": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_line_graph_interest.png",
+        "source": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\src\\main\\res\\drawable-mdpi\\ic_line_graph_interest.png"
+    },
+    {
+        "merged": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_table_view.png",
+        "source": "C:\\Users\\aaron\\AndroidStudioProjects\\anilproject\\app\\src\\main\\res\\drawable-mdpi\\ic_table_view.png"
+    }
+]

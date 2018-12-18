@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_result"
+            android:icon="@drawable/ic_result"
+            android:title="Result" />
+        <item
+            android:id="@+id/nav_graph_balance"
+            android:icon="@drawable/ic_line_graph_balance"
+            android:title="Balance Graph" />
+        <item
+            android:id="@+id/nav_graph_principal"
+            android:icon="@drawable/ic_linne_graph_principal"
+            android:title="Principal Graph" />
+        <item
+            android:id="@+id/nav_graph_interest"
+            android:icon="@drawable/ic_line_graph_interest"
+            android:title="Interest Graph" />
+        <item
+            android:id="@+id/nav_chart_breakdown"
+            android:icon="@drawable/ic_pie_chart"
+            android:title="Breakdown chart" />
+        <item
+            android:id="@+id/nav_table_view"
+            android:icon="@drawable/ic_table_view"
+            android:title="Schedule Table" />
+    </group>
+
+</menu>
