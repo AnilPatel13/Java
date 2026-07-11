@@ -1,0 +1,65 @@
+package com.whygo.JavaBased;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Customer {
+
+    @Value("20")
+    private int age;
+
+    private Computer com;
+
+    public Customer() {
+        System.out.println("Customer Constructor");
+    }
+
+    public Customer(int age) {
+        System.out.println("Customer Constructor with age");
+        this.age = age;
+//        this.laptop = laptop;
+    }
+
+//    @ConstructorProperties({"age", "laptop"})
+//    public Customer(int age, Laptop laptop) {
+//        System.out.println("para 2 Customer Constructor with age");
+//        this.age = age;
+//        this.laptop = laptop;
+//    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        System.out.println("Setting age");
+        this.age = age;
+    }
+
+//    public Laptop getLaptop() {
+//        return laptop;
+//    }
+//
+//    public void setLaptop(Laptop laptop) {
+//        this.laptop = laptop;
+//    }
+
+
+    public Computer getCom() {
+        return com;
+    }
+
+    @Autowired
+    @Qualifier("laptop")
+    public void setCom(Computer com) {
+        this.com = com;
+    }
+
+    public void getCustomer() {
+        System.out.println("Customer");
+        com.getLaptop();
+    }
+}

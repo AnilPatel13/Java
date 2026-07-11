@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="customer1" class="com.whygo.SetterInjector.Customer" scope="singleton" autowire="byType">
+<!--            <property name="age" value="25"/>-->
+<!--           <constructor-arg type="int" value="25"/>-->
+<!--           <constructor-arg type="com.whygo.SetterInjector.Laptop" ref="laptop1"/>-->
+<!--        <constructor-arg index="0" value="25"/>-->
+<!--        <constructor-arg index="1" ref="laptop1"/>-->
+<!--        <constructor-arg name="laptop" ref="laptop1"/>-->
+<!--        <constructor-arg name="age" value="25"/>-->
+
+
+            <property name="age" value="25"/>
+            <property name="com">
+                <bean id="com1" class="com.whygo.SetterInjector.Laptop" scope="singleton" primary="true"/>
+            </property>
+    </bean>
+<!--    <bean id="com1" class="com.whygo.SetterInjector.Laptop" scope="singleton" primary="true"/>-->
+
+<!--    <bean class="com.whygo.SetterInjector.Desktop" scope="singleton" lazy-init="true"/>-->
+
+<!--    <bean id="customer" class="com.whygo.Customer" scope="prototype"/>-->
+<!--    <bean id="laptop" class="com.whygo.Laptop"/>-->
+</beans>
