@@ -1,4 +1,4 @@
-package com.whygo.app;
+package com.whygo.app.model;
 
 public interface Computer {
     void compile();

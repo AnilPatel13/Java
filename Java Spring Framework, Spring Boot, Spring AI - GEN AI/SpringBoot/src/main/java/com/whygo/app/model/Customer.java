@@ -1,4 +1,4 @@
-package com.whygo.app;
+package com.whygo.app.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

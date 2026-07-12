@@ -1,4 +1,4 @@
-package com.whygo.app;
+package com.whygo.app.model;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
