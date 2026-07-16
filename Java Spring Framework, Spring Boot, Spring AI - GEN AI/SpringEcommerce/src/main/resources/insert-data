@@ -1,0 +1,11 @@
+Insert into product(id, brand, category, description, name, price, product_available, release_date, stock_quantity)
+values (1, 'Apple', 'Smartphone', 'A smartphone with a 6.1-inch display and 128GB of storage', 'iPhone 12', 799.99, true, '2020-09-15', 100),
+(2, 'Samsung', 'Smartphone', 'A smartphone with a 6.1-inch display and 128GB of storage', 'Samsung Galaxy S21', 699.99, true, '2020-09-15', 100),
+(3, 'Google', 'Smartphone', 'A smartphone with a 6.1-inch display and 128GB of storage', 'Google Pixel 5', 599.99, true, '2020-09-15', 100),
+(4, 'OnePlus', 'Smartphone', 'A flagship smartphone with 5G support and 120Hz display', 'OnePlus 9', 729.99, true, '2021-03-23', 75),
+(5, 'Xiaomi', 'Smartphone', 'Budget-friendly smartphone with excellent camera', 'Xiaomi Redmi Note 10', 199.99, true, '2021-03-04', 200),
+(6, 'Sony', 'Smartphone', 'Premium smartphone with focus on camera and display', 'Sony Xperia 1 III', 1299.99, true, '2021-04-26', 50),
+(7, 'Motorola', 'Smartphone', 'Affordable smartphone with long battery life', 'Moto G Power', 249.99, true, '2020-04-22', 150),
+(8, 'LG', 'Smartphone', 'Dual-screen smartphone for multitasking', 'LG Velvet', 599.99, true, '2020-05-07', 80),
+(9, 'Nokia', 'Smartphone', 'Durable smartphone with clean Android experience', 'Nokia 8.3 5G', 499.99, true, '2020-03-19', 120),
+(10, 'Huawei', 'Smartphone', 'High-end smartphone with Leica camera system', 'Huawei P40 Pro', 999.99, true, '2020-03-26', 60);
