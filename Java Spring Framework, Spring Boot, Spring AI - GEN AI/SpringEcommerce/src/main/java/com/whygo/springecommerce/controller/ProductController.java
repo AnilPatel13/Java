@@ -40,12 +40,57 @@ public class ProductController {
     public ResponseEntity<?> addProduct(@RequestPart Product product, @RequestPart MultipartFile imageFile) {
         Product prd = null;
         try {
-            prd = service.addProduct(product, imageFile);
+            prd = service.addOrUpdateProduct(product, imageFile);
             return new ResponseEntity<>(prd, HttpStatus.CREATED);
         } catch (IOException e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
 
-
     }
+
+    @GetMapping("/product/{productId}/image")
+    public ResponseEntity<byte[]> getImageByProductId(@PathVariable int productId)
+    {
+        Product product = service.getProductById(productId);
+        if(product.getId() > 0)
+            return new ResponseEntity<>(product.getImageData(), HttpStatus.ACCEPTED);
+        else
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @PutMapping("/product/{id}")
+    public ResponseEntity<String> updateProduct(@PathVariable int id, @RequestPart Product product, @RequestPart MultipartFile imageFile)
+    {
+        Product prd = null;
+        try{
+            prd = service.addOrUpdateProduct(product, imageFile);
+            return new ResponseEntity<>("Product updated successfully", HttpStatus.OK);
+        }catch (Exception e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @DeleteMapping("/product/{id}")
+    public ResponseEntity<String> deleteProduct(@PathVariable int id)
+    {
+        Product prd = service.getProductById(id);
+        if(prd != null){
+            service.deleteProduct(id);
+            return new ResponseEntity<>("Product deleted successfully", HttpStatus.OK);
+        }
+        else
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @GetMapping("/products/search")
+    public ResponseEntity<List<Product>> searchProducts(@RequestParam String keyword)
+    {
+        List<Product> product = service.searchProducts(keyword);
+        System.out.println("searchProducts : "+ keyword);
+
+        return new ResponseEntity<>(product, HttpStatus.ACCEPTED);
+    }
+
+
+
 }
