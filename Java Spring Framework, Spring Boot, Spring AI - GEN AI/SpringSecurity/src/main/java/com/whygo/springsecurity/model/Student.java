@@ -1,4 +1,4 @@
-package com.whygo.springsecurity;
+package com.whygo.springsecurity.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

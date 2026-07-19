@@ -1,4 +1,4 @@
-package com.whygo.springsecurity;
+package com.whygo.springsecurity.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
